@@ -6,7 +6,7 @@ const ScheduleItem = props => {
   return (
     <li>
       <p>{`Schedule: ${schedule}`}</p>
-      <p>{`Good-To-Go: ${goodToGo} | Pay By Mail ${payByMail}`}</p>
+      <p>Good-To-Go: <b>{goodToGo}</b> || Pay By Mail <b>{payByMail}</b></p>
       <p>-------------</p>
     </li>
   )

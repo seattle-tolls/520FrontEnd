@@ -6,7 +6,6 @@ import { todaySchedule, currentTimeInfo } from '../reducers'
 import CurrentTime from './current-time'
 import TodaySchedule from './today-schedule'
 
-
 const App = ({ fetchTollInfo, todaySchedule, currentTimeInfo }) => {
 
   useEffect(()=> {

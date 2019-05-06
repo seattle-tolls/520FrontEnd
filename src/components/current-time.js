@@ -9,11 +9,11 @@ const CurrentTime = props => {
 
   return (
     <div>
-      <p>{holidayName}</p>
-      <p>{dayName}</p>
+      <h2>{dayName}</h2>
+      <h3>{holidayName}</h3>
       <p>{schedule}</p>
-      <p>{goodToGo}</p>
-      <p>{payByMail}</p>
+      <p>Good To Go: <b>{goodToGo}</b></p>
+      <p>Pay By Mail: <b>{payByMail}</b></p>
     </div>
   )
 }
