@@ -1,13 +1,17 @@
 import React from 'react'
+import ScheduleItem from './schedule-item'
+
 
 const TodaySchedule = ({ todaySchedule }) => {
 
+
+
   return (
     <ul>
-      {Object.keys(todaySchedule).map((spot, i) =>
-        <li key={i}>
-          {todaySchedule[spot].schedule}
-        </li>
+      {Object.keys(todaySchedule).map((item, i) =>
+
+
+        <ScheduleItem  key={i} todaySchedule={todaySchedule[item]} />
       )}
     </ul>
 
