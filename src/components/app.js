@@ -15,9 +15,10 @@ const App = ({ fetchTollInfo, todaySchedule, currentTimeInfo }) => {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>520 Toll Bridge</h1>
       { currentTimeInfo && <CurrentTime currentTimeInfo={currentTimeInfo}  />}
       <TodaySchedule todaySchedule={todaySchedule}  />
+      <p>{`API--> ${process.env.API_URL}`}</p>
     </div>
   )
 }
