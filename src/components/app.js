@@ -1,3 +1,4 @@
+import '../styles.css'
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { fetchTollInfo } from '../actions/toll'
@@ -12,12 +13,19 @@ const App = ({ fetchTollInfo, todaySchedule, currentTimeInfo }) => {
     fetchTollInfo()
   }, [])
 
+  const handleRefresh = (e) => {
+    e.preventDefault()
+    fetchTollInfo()
+  }
+
   return (
-    <div className="App">
+    <div className="app">
       <h1>520 Toll Bridge</h1>
+      <button className='refresh-btn' onClick={handleRefresh}>Refresh</button>
       { currentTimeInfo && <CurrentTime currentTimeInfo={currentTimeInfo}  />}
-      <TodaySchedule todaySchedule={todaySchedule}  />
+      {/* <TodaySchedule todaySchedule={todaySchedule}  /> */}
       <p>{`API--> ${process.env.API_URL}`}</p>
+
     </div>
   )
 }

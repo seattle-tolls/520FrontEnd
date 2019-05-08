@@ -8,7 +8,7 @@ const CurrentTime = props => {
   } = props.currentTimeInfo
 
   return (
-    <div>
+    <div className='current-time'>
       <h2>{dayName}</h2>
       <h3>{holidayName}</h3>
       <p>{schedule}</p>
