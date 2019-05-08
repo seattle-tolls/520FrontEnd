@@ -12,8 +12,12 @@ const CurrentTime = props => {
       <h2>{dayName}</h2>
       <h3>{holidayName}</h3>
       <p>{schedule}</p>
-      <p>Good To Go: <b>{goodToGo}</b></p>
-      <p>Pay By Mail: <b>{payByMail}</b></p>
+      <hr/>
+      <h3>{goodToGo}</h3>
+      <p>Good To Go</p>
+      <hr/>
+      <h3>{payByMail}</h3>
+      <p>Pay By Mail</p>
     </div>
   )
 }

@@ -2,7 +2,7 @@
 
 *{
   box-sizing: border-box;
-  border: .1px dashed orange;
+  /* border: .1px dashed orange; */
   margin: 0;
   padding: 0;
 }
@@ -39,18 +39,17 @@ h5, h6, p {
 .current-time{
   margin: 0 auto;
   width: 90%;
+  border: .1px solid #000;
+  margin-bottom: 30px;
 }
 
-.current-time h2{
+.current-time h2, .current-time h3{
   text-align: center;
   font: 1.2em sans-serif;
 }
 
 .current-time p{
   text-align: center;
-}
-
-.current-time p{
 }
 
 .refresh-btn {
