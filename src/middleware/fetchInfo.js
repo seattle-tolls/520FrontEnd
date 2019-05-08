@@ -1,9 +1,6 @@
 import { FETCH_TOLL_INFO } from '../constants/action-types'
 import { setTollInfo } from '../actions/toll'
 const apiURL = process.env.API_URL
-const myHeaders = new Headers({
-
-})
 
 const inits = {
   method: 'GET',
@@ -12,7 +9,7 @@ const inits = {
   },
 }
 
-const fetchInfo = ({ dispatch, getState }) => next => action => {
+const fetchInfo = ({ dispatch }) => next => action => {
 
   if(action.type !== FETCH_TOLL_INFO)
     return next(action)

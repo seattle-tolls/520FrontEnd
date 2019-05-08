@@ -7,7 +7,7 @@ const TodaySchedule = ({ todaySchedule }) => {
 
 
   return (
-    <ul>
+    <ul className='todaySchedule'>
       {Object.keys(todaySchedule).map((item, i) =>
         <ScheduleItem  key={i} todaySchedule={todaySchedule[item]} />
       )}
