@@ -7,6 +7,7 @@
     "start": "node index.js",
     "build": "webpack",
     "build-start": "npm run build & npm start",
+    "aws-deploy": "aws s3 cp dist/. s3://520toll --recursive",
     "watch": "webpack-dev-server --inline --hot",
     "test": "jest",
     "heroku-postbuild": "webpack",
